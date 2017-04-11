@@ -1,0 +1,21 @@
+package com.justin.helloworld;
+//package iostream; 
+
+public class PrintHelloToScreen {
+	
+	private void printIt(){
+		System.out.println("hello world.");
+
+	}
+	
+	public static void main(String[] args) {
+		PrintHelloToScreen printHelloToScreen = new PrintHelloToScreen();
+		
+		printHelloToScreen.printIt();
+	}
+	
+	
+	
+	
+	
+}

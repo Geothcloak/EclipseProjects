@@ -1,0 +1,16 @@
+package com.justin.RentalSystem;
+
+public class Address {
+	private String streetAddress; 
+	private String city;
+	private String state;
+	private String zipcode;
+	public Address(){
+		streetAddress = "430 Home St.";
+		city = "sycamore";
+		state = "IL";
+		zipcode = "60178";
+	}
+	
+	//address = "430 Home st. sycamore il 60178";
+}

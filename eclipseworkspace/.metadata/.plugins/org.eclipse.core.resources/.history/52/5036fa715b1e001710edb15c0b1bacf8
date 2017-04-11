@@ -1,0 +1,48 @@
+package com.justin.RentalSystem;
+
+public class RentalManager {
+	private Car[] manageCars;
+	private int carNextIndex;
+	
+	private House[] manageHouses;
+	private int houseNextIndex;
+	
+	public RentalManager(){
+		manageCars = new Car[10];
+		manageHouses = new House[10];
+		carNextIndex = 0;
+		houseNextIndex = 0;
+	}
+	
+	
+	//send me a car and ill add that sucker to the list
+	public void addToRentalManager(Car carToAdd){
+		if (carNextIndex <= 10){
+			manageCars[carNextIndex] = carToAdd;
+			++carNextIndex;
+		}else{
+			System.out.println("too many cars inside rental manager. unable to add the car.");
+		}
+		return(manageCars[carNextIndex -1]);
+	}
+	
+	//send me a house and ill add that sucker to the list
+	public void addToRentalManager(House houseToAdd){
+		if (houseNextIndex <= 10){
+			manageHouses[houseNextIndex] = houseToAdd;
+			++houseNextIndex;
+		}else{
+			System.out.println("too many houses inside rental manager. unable to add the house.");
+		}
+		
+	}
+	
+	//ask me how many cars or houses i have and ill send you a number
+	public int howManyCars(){
+		return(carNextIndex);
+	}
+	public int howManyHouses(){
+		return(houseNextIndex);
+	}
+	
+}

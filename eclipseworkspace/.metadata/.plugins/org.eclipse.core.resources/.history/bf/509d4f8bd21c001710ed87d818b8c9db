@@ -1,0 +1,28 @@
+package com.justin.RentalSystem;
+
+public class House {
+	private String address;
+	private double squareFeet;
+	private String color;
+
+	public House() {
+		address = "430 Home st.";
+		squareFeet = 1000090000;
+		color = "brown";
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public double getSquareFeet() {
+		return squareFeet;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	// address, square feet, color,
+
+}

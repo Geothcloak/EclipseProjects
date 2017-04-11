@@ -1,0 +1,9 @@
+package com.justin.RentalSystem;
+
+public class CreateCars extends DisplayToScreen{
+	public CreateCars(){
+		String Make = "honda";
+		String Model = "accord";
+		String Year = "2002";
+	}
+}

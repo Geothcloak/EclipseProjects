@@ -1,0 +1,14 @@
+package com.justin.RentalSystem;
+
+public class DisplayToScreen {
+
+	private String printAll(){
+		System.out.println();
+		return ("it worked");
+	}
+	
+	
+	public static void main(String[] args) {
+	
+	}
+}

@@ -1,0 +1,18 @@
+package com.justin.RentalSystem;
+
+public class CreateCars{
+	private String Make;
+	private String Model;
+	private String Year;
+	public CreateCars(){
+		String Make = "honda";
+		String Model = "accord";
+		String Year = "2002";
+		
+	}
+	public String printCar(){
+		DisplayToScreen.printAll(Make, Model, Year);
+		
+		return("working inside print car");
+	}
+}

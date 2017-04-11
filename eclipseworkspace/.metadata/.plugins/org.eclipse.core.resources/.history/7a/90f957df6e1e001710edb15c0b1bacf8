@@ -1,0 +1,25 @@
+package com.justin.animals;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+public class DogTest {
+	
+	Dog dogUnderTest;
+	
+	@Before
+	public void init(){
+		dogUnderTest = new Dog("benny");
+	}
+	@Test
+	public void testDogExtendsAnimal(){
+		Assert.assertEquals("barkbarkbark", dogUnderTest.sayMyName());
+	}
+	@Test
+	public void testCanDogEatBone(){
+		Assert.assertEquals("he ate a bone", dogUnderTest.eatABone());
+	}
+	
+	
+}

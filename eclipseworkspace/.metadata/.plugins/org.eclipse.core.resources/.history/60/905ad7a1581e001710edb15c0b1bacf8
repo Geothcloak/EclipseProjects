@@ -1,0 +1,31 @@
+package com.justin.RentalSystem;
+
+public class RentalManager {
+	
+	private Car[] manageCars;
+	private int carNextIndex = 0;
+	
+	private House[] manageHouses;
+	private int houseNextIndex = 0;
+	
+	//send me a car and ill add that sucker to the list
+	public void addToRentalManager(Car carToAdd){
+		manageCars[carNextIndex] = carToAdd;
+		++carNextIndex;
+	}
+	
+	//send me a house and ill add that sucker to the list
+	public void addToRentalManager(House houseToAdd){
+		manageHouses[houseNextIndex] = houseToAdd;
+		++houseNextIndex;
+	}
+	
+	//ask me how many cars or houses i have and ill send you a number
+	public int howManyCars(){
+		return(carNextIndex -1);
+	}
+	public int howManyHouses(){
+		return(houseNextIndex -1);
+	}
+	
+}

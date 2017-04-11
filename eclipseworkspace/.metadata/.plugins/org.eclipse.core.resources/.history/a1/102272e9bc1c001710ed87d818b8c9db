@@ -1,0 +1,23 @@
+package com.justin.helloworld;
+
+public class PrintHelloToScreen {
+	private String messageToPrint;
+	
+	private String printIt(){
+		System.out.println(messageToPrint +" inside printIt.");
+		return messageToPrint;
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		PrintHelloToScreen printHelloToScreen = new PrintHelloToScreen();
+		
+		String toCatchAPreditor;
+		toCatchAPreditor = printHelloToScreen.printIt();
+		System.out.println(toCatchAPreditor + " inside main.");
+	}
+	
+	
+}

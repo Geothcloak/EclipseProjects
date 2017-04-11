@@ -1,0 +1,16 @@
+package com.justin.RentalSystem;
+
+public class PrintCar {
+
+	public String printAll(Car car){
+		System.out.println("This is the make " + Make + " This is the Model " + Model + " This is the year " + Year + ".");
+		return ("it worked");
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Car createCars = new Car();
+		
+	}
+}
