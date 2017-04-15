@@ -1,0 +1,22 @@
+package com.justin.shippingSystem;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class testReporter {
+	
+	@Before
+	public void init(){
+		Package package10 = new Box(String "id 100", String "430 home st sycamore il", double 10,
+				double 11, double 1);
+		
+		
+		//Assert.assertEquals(" ", animal.sayMyName());
+	}
+
+	@Test
+	public void testCanPrintList() {
+		
+	}
+
+}

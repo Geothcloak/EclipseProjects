@@ -1,0 +1,7 @@
+package com.justin.shippingSystem;
+
+public class Letter extends Package{
+	public Letter(String id, String destination){
+		super(id, destination);
+	}
+}

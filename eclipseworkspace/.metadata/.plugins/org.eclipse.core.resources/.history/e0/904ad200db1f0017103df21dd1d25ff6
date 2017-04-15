@@ -1,0 +1,8 @@
+package com.justin.shippingSystem;
+
+public class Package {
+	String id;
+	String Destination;
+	public Package
+	
+}

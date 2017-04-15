@@ -1,0 +1,11 @@
+package com.justin.shippingSystem;
+
+public class Package {
+	String id;
+	String destination;
+	public Package(String id, String destination){
+		this.id = id;
+		this.destination = destination;
+	}
+	
+}

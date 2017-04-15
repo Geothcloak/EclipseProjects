@@ -4,10 +4,11 @@
 <fullyQualifiedTypeName name="com.justin.RentalSystem.CarReporter"/>
 <fullyQualifiedTypeName name="com.justin.RentalSystem.Address"/>
 <fullyQualifiedTypeName name="com.justin.RentalSystem.AddressReporter"/>
-<fullyQualifiedTypeName name="junit.framework.Assert"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 </qualifiedTypeNameHistroy>

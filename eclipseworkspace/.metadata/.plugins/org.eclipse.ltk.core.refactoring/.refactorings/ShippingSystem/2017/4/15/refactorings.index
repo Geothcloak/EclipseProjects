@@ -1,0 +1,23 @@
+1492041035150	Rename compilation unit 'Packages.java'
+1492041136035	Rename type 'Boxes'
+1492041148294	Rename type 'Letters'
+1492056373827	Copy package
+1492056382916	Delete element
+1492056391377	Copy package
+1492056396946	Delete element
+1492056404042	Copy package
+1492056408080	Delete element
+1492056413975	Copy folder
+1492056419198	Delete elements
+1492056462316	Delete element
+1492056476001	Copy package
+1492056502997	Delete elements
+1492209818799	Rename type 'Package'
+1492213743402	Move compilation unit
+1492214068659	Move compilation unit
+1492214171887	Delete element
+1492214210826	Rename type 'testReporter'
+1492214231284	Move compilation unit
+1492215124301	Rename method 'addListPackagesToManager'
+1492215165584	Rename field 'managePackages'
+1492215301386	Rename method 'printList'

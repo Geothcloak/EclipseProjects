@@ -1,0 +1,14 @@
+package com.justin.shippingSystem;
+
+public class Box extends Package{
+	double dimentionX;
+	double dimentionY;
+	public Box(String id, String destination, double dimentionX, double dimentionY){
+		super(id, destination);
+		this.dimentionX = dimentionX;
+		this.dimentionY = dimentionY;
+	}
+	
+	
+	
+}

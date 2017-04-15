@@ -1,0 +1,25 @@
+package com.justin.shippingSystem;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Reporter {
+	List<Package> managePackages;
+	
+	public Reporter(){
+		managePackages = new ArrayList<>();
+	}
+	
+	public Package addListPackagesToManager(List<Package> managePackages){
+		this.managePackages = managePackages;
+		return managePackages.get(0);
+	}
+	
+	public void printList(){
+		
+		//return null;
+	}
+	//print each item 
+	//print special stuff for box or letter too
+	
+}

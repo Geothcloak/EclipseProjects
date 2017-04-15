@@ -1,0 +1,34 @@
+package com.justin.shippingSystem;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Reporter {
+	List<Parcel> managePackages;
+	
+	public Reporter(){
+		managePackages = new ArrayList<>();
+	}
+	
+	public Parcel setParcels(List<Parcel> managePackages){
+		this.managePackages = managePackages;
+		return managePackages.get(0);
+	}
+	
+	public String printList(){
+		int count = 0;
+		while(count < managePackages.size()){
+			System.out.println(managePackages.get(count).whatAmI() + " id:" +  managePackages.get(count).getId()
+					+ " " + managePackages.get(count).getDestination() + " " + managePackages.get(count).specialInformation());
+			count++;
+			
+		}
+		return managePackages.get(0).whatAmI() + " id:" +  managePackages.get(0).getId()
+				+ " " + managePackages.get(0).getDestination() + " " + managePackages.get(0).specialInformation();
+	}
+	
+	
+	//print each item 
+	//print special stuff for box or letter too
+	
+}
