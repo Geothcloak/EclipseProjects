@@ -1,0 +1,7 @@
+package com.justin.rpgwriter;
+
+public class PlayerCharacterWriter {
+	public String writeToFile(PlayerCharacter playerCharacter){
+		return "he";
+	}
+}

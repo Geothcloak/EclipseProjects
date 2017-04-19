@@ -1,0 +1,30 @@
+package com.justin.shippingSystem;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+public class CrateTest {
+	private Crate crate;
+	private Address address;
+	private Dimentions dimentions;
+	
+	@Before
+	public void init(){
+		address = new Address("430 home st.", "Sycamore", "il", "60178");
+		dimentions = new Dimentions(1,2,3);
+		crate = new Crate("1ok", address, dimentions, "wood", 100);
+	}
+	@Test
+	public void canWhatAmI(){
+		Assert.assertEquals("Crate", crate.whatAmI());
+	}
+	@Test
+	public void canSpecialInformation(){
+		Assert.assertEquals(" ", crate.specialInformation());
+	}
+	@Test
+	public void canGetDimention(){
+		Assert.assertEquals(dimentions, crate.getDimention());
+	}
+}

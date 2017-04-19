@@ -1,0 +1,1 @@
+name: bob int: 0 str: 10 charisma: 3 stamina: 8

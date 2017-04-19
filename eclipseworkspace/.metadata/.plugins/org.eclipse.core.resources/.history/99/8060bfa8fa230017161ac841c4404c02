@@ -1,0 +1,61 @@
+package com.justin.shippingSystem;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Reporter {
+	List<Parcel> parcels;
+	
+	public Reporter(){
+		parcels = new ArrayList<>();
+	}
+	
+	public Parcel setParcels(List<Parcel> managePackages){
+		this.parcels = managePackages;
+		return managePackages.get(0);
+	}
+	
+	public String printParcels(){
+		AddressReporter addressReporter = new AddressReporter();
+		CalcVolume calcVolume = new CalcVolume();
+		
+		StringBuilder stringBuilder = new StringBuilder();
+		for(int count = 0; count < parcels.size(); count++){
+			
+			stringBuilder.append(parcels.get(count).whatAmI());
+			stringBuilder.append(" id:").append(parcels.get(count).getId());
+			stringBuilder.append(" ").append(addressReporter.printAddress(parcels.get(count).getAddress()));
+			stringBuilder.append(" ").append(parcels.get(count).specialInformation()).append("\n");
+			
+		}
+		//making new for loops for practice i could use the one above
+		
+		double sumOfVolume = 0;
+		double sumOfPostage = 0;
+		
+		for(int count = 0; count < parcels.size(); count++){
+			if (parcels.get(count).getId().equals("Crate")){
+				Crate crate = (Crate)parcels.get(count);
+				sumOfVolume += calcVolume.calcVolume(crate.getDimention());
+				
+				//sumOfVolume += parcels.get(count).
+			}
+			if (parcels.get(count).getId().equals("Letter")){
+				Letter letter = (Letter)parcels.get(count);
+				sumOfPostage += letter.getPostage();
+				
+				//sumOfVolume += parcels.get(count).
+			}
+		}
+		
+		System.out.println("volume " + sumOfVolume + " " + "postage $" + sumOfPostage);
+		return stringBuilder.toString();
+	}
+	
+	
+	//print each item 
+	//print special stuff for box or letter too
+	
+	
+	//naming, for loop
+}

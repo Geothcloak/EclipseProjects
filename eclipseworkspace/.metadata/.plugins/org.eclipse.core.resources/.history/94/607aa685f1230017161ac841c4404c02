@@ -1,0 +1,32 @@
+package com.justin.shippingSystem;
+
+public class Crate extends Parcel{
+	private Dimentions dimention;
+	private String material;
+	private double weight;
+	public Crate(String id, Address address, Dimentions dimention, String material, double weight){
+		super(id, address);
+		this.dimention = dimention;
+		this.material = material;
+		this.weight = weight;
+	}
+	@Override
+	public String whatAmI(){
+		return "Crate";
+	}
+	
+	@Override
+	public String specialInformation(){
+		CalcVolume calcVolume = new CalcVolume();
+		return ("The dimentions are " + dimention.getDimentionX() + "x"
+		+ dimention.getDimentionY() + "x" + dimention.getDimentionZ()
+		+ "its weight in lbs " +  weight + " its material is "
+		+ material + " the Volume is " + dimention.calcVolume()
+		+ " the weight per foot is " + dimention.calcWeightPerFoot(weight);
+		
+	}
+	public Dimentions getDimention() {
+		return dimention;
+	}
+	
+}

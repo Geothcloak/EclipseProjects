@@ -1,0 +1,17 @@
+package com.justin.shippingSystem;
+
+public class ShoeBox extends Parcel{
+	public ShoeBox(String id, Address address){
+		super(id, address);
+	}
+
+	@Override
+	public String getType() {
+		return "ShoeBox";
+	}
+
+	@Override
+	public String specialInformation() {
+		return null;
+	}
+}

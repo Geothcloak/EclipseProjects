@@ -1,0 +1,30 @@
+package com.justin.shippingSystem;
+
+import java.util.List;
+
+public class Sum {
+	
+	
+	public double sumAllPostage(List<Parcel> parcels){
+		
+		double sumOfPostage = 0;
+		
+		for(int count = 0; count < parcels.size(); count++){
+			
+			if (parcels.get(count).getId().equals("Letter")){
+				Letter letter = (Letter)parcels.get(count);
+				sumOfPostage += letter.getPostage();
+			}
+		}
+		return 1;
+	}
+	public double sumAllWeight(List<Parcel> parcels){
+		double sumOfVolume = 0;
+		for(int count = 0; count < parcels.size(); count++){
+			if (parcels.get(count).getId().equals("Crate")){
+				Crate crate = (Crate)parcels.get(count);
+				sumOfVolume += calcVolume.calcVolume(crate.getDimention());
+			}
+		}
+	}
+}

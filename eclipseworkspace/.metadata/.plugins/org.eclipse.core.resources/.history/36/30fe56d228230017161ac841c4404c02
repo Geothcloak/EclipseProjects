@@ -1,0 +1,20 @@
+package com.justin.shippingSystem;
+
+public class Box extends Parcel{
+	private Dimentions dimention;
+	public Box(String id, String destination, Dimentions dimention){
+		super(id, destination);
+		this.dimention = dimention;
+	}
+	@Override
+	public String whatAmI(){
+		return "Box";
+	}
+	
+	@Override
+	public String specialInformation(){
+		return ("The dimentions are " + dimention.getDimentionX() + "x" + dimention.getDimentionY() + "x" + dimention.getDimentionZ());
+		
+	}
+	
+}

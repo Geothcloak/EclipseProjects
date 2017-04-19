@@ -26,7 +26,8 @@ public class DogTest {
 		
 		Assert.assertEquals(" ", animal.sayMyName());
 		
-		Dog dog = (Dog)animal;
+		//Dog dog = ((Dog)animal).eatABone();
+		
 		// now dog can bark because it can now cast.
 	}
 	

@@ -1,0 +1,7 @@
+package com.justin.shippingSystem;
+
+public class CalcVolume {
+	public double calcVolume(Dimentions dimentions){
+		return dimentions.getDimentionX() * dimentions.getDimentionY() * dimentions.getDimentionZ();
+	}
+}

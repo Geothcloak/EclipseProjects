@@ -1,0 +1,13 @@
+package com.justin.shippingSystem;
+
+public class AddressReporter {
+	public String printAddress(Address address) {
+		//System.out.println(address.getStreetAddress() + " " + address.getCity() + " "
+			//	+ address.getState() + " " + address.getZipcode() + ".");
+		
+		//TODO:JUSTIN MAKE STRING BUILDER HERE
+		return (address.getStreetAddress() + " " + address.getCity() + " "
+				+ address.getState() + " " + address.getZipcode() + ".");
+	}
+
+}

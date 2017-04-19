@@ -1,0 +1,33 @@
+package com.justin.shippingSystem;
+
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+public class ParcelTest {
+	Parcel parcelUnderTest;
+	Address address1;
+	@Before
+	public void init(){
+		address1 = new Address("430 home st", "sycamore", "il", "60178");
+		parcelUnderTest = new Parcel("102", address1);
+		
+	}
+	@Test
+	public void canWhatAmI() {
+		Assert.assertEquals("Parcel", parcelUnderTest.whatAmI());
+	}
+	@Test
+	public void canSpecialInformation(){
+		Assert.assertEquals("I'm not a box or letter", parcelUnderTest.specialInformation());
+	}
+	@Test
+	public void canGetId(){
+		Assert.assertEquals("102", parcelUnderTest.getId());
+	}
+	@Test
+	public void getDestination(){
+		Assert.assertEquals(address1, parcelUnderTest.getAddress());
+	}
+}

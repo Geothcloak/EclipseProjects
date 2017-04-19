@@ -1,0 +1,13 @@
+package com.justin.shippingSystem;
+
+public class Weight {
+	
+	private double lbs;
+	public Weight(double lbs){
+		this.lbs = lbs;
+	}
+	public double getLbs() {
+		return lbs;
+	}
+	
+}

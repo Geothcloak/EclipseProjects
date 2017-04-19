@@ -1,0 +1,11 @@
+package com.justin.shippingSystem;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Sum {
+	
+	public double sumAllPostage(List<Parcels>){
+		return 1;
+	}
+}

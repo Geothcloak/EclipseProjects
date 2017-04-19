@@ -1,0 +1,13 @@
+package com.justin.shippingSystem;
+
+public class Material2 {
+	
+	private String name;
+	public Material2(String name){
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+	}
+	
+}

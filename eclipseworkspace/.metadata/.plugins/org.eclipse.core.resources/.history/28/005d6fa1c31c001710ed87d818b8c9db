@@ -1,7 +1,0 @@
-package com.justin.RentalSystem;
-
-public class CreateCars extends displayToScreen{
-	public CreateCars(){
-	
-	}
-}

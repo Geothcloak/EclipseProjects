@@ -1,0 +1,24 @@
+package com.justin.shippingSystem;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class DimentionsTest {
+	@Before
+	public void init(){
+		
+	}
+	@Test
+	public void canGetDimentionX(){
+		
+	}
+	@Test
+	public void canGetDimentionY(){
+		
+	}
+	@Test
+	public void canGetDimentionZ(){
+		
+	}
+	
+}

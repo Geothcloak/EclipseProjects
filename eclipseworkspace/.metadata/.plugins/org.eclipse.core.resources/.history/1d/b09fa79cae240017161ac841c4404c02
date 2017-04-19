@@ -1,0 +1,20 @@
+package com.justin.shippingSystem;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class CalcVolumeTest {
+	Dimentions dimentions;
+	CalcVolume calcVolume;
+	@Before
+	public void init(){
+		dimentions = new Dimentions(1,2,3);
+		calcVolume = new CalcVolume();
+	}
+	@Test
+	public void canCalcVolume(){
+		Assert.assertEquals(6, calcVolume.calcVolume(dimentions), .001);
+	}
+}
