@@ -1,0 +1,5 @@
+package com.justin.cipher;
+
+public interface TodaysCipherCode {
+	public String useCipher();
+}

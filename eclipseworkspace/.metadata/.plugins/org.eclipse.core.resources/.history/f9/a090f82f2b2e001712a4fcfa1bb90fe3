@@ -1,0 +1,11 @@
+package com.justin.cipher;
+
+public class ReadMessageFromFile {
+	
+	public String readMessageFromFile(){
+		
+		
+		
+		return null;
+	}
+}
