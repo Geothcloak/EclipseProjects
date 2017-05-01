@@ -1,0 +1,7 @@
+package com.justin.fileio;
+
+public class Poison {
+//Poisons have a name and potency
+	private String name;
+	private int potency;
+}

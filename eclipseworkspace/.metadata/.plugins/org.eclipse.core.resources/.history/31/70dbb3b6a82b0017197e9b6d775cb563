@@ -1,0 +1,12 @@
+package com.justin.fileio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ReadFromFile {
+	List<PlayerCharacter> playerCharacters;
+	
+	public ReadFromFile(){
+		playerCharacters = new ArrayList<>();
+	}
+}

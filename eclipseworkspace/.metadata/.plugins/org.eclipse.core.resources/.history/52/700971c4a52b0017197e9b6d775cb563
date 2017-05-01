@@ -1,0 +1,27 @@
+package com.justin.fileio;
+
+public class Stats {
+	private int intellect;
+	private int charisma;
+	private int strength;
+	private int stamina;
+	public Stats(int intellect, int charisma, int strength, int stamina){
+		this.intellect = intellect;
+		this.charisma = charisma;
+		this.strength = strength;
+		this.stamina = stamina;
+	}
+	public int getIntellect(){
+		return 0;
+	}
+	public int getCharisma(){
+		return 0;
+	}
+	public int getStrength(){
+		return 0;
+	}
+	public int getStamina(){
+		return 0;
+	}
+}
+

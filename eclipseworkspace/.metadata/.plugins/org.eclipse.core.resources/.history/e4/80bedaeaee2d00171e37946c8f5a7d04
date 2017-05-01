@@ -1,0 +1,22 @@
+package com.justin.fileio;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.justin.characters.PlayerCharacter;
+
+public class WriteToFileTest {
+	WriteToFile writeToFileUnderTest;
+	@Before
+	public void init(){
+		writeToFileUnderTest = new WriteToFile();
+		ReadFromFile
+	}
+	@Test
+	public void canWriteToFile() {
+		writeToFileUnderTest.writeToFile(playerCharacters);
+		//Assert.assertEquals(" ", writeToFileUnderTest.writeToFile(playerCharacters));
+	}
+
+}

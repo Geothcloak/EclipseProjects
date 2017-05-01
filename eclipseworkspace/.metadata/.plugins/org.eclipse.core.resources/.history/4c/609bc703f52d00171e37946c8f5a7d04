@@ -1,0 +1,33 @@
+package com.justin.maps;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class SchoolClass {
+	private Map<String, Student> students;
+	private List<Student> studentsList;
+	
+	public SchoolClass(){
+		students = new HashMap<>();
+		students.put("james", new Student("james", 1));
+		students.put("kelly", new Student("james", 1));
+		students.put("adam", new Student("james", 1));
+		
+		studentsList = new ArrayList();
+		studentsList.add("james", new Student("james", 1));
+		studentsList.add("james", new Student("james2", 2));
+		studentsList.add("james", new Student("james3", 3));
+		studentsList.add("james", new Student("james4", 4));
+	}
+	public Student reportStudent(String studentName){
+		return students.get(studentName);
+	}
+	
+	public String reportClass(){
+		return null;
+	}
+	
+	
+}

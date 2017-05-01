@@ -1,0 +1,28 @@
+package com.justin.fileio;
+
+public class Cleric extends PlayerCharacter{
+	private static final String CLERIC = "Cleric";
+	private String classType;
+	private String feat;
+	
+	public Cleric(String name, Stats stats, String feat) {
+		super(name, stats);
+		this.classType = CLERIC;
+		this.feat = feat;
+	}
+	@Override
+	public String getClassType() {
+		return classType;
+	}
+
+	@Override
+	public String getFeat() {
+		return feat;
+	}
+	@Override
+	public String eatFood() {
+		return "drank some wine";
+	}
+	
+
+}

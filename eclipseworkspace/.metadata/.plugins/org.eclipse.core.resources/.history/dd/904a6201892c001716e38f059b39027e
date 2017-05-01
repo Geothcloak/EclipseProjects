@@ -1,0 +1,29 @@
+package com.justin.fileio;
+
+public class SetClassType {
+	public String calcClass(Stats stats){
+		//all equal then they are cleric
+		if (stats.getIntellect() == stats.getCharisma() & stats.getIntellect() == stats.getStrength()
+				& stats.getIntellect() == stats.getStamina()){
+			return "cleric";
+		}
+		//if sum of stats is >=24 they are rogue
+		else if (stats.getIntellect() + stats.getCharisma() + stats.getStrength() + stats.getStamina() == 24){
+			return "rogue";
+		}
+		//highest stat is int then wizard
+		else if (stats.getIntellect() > stats.getStamina() & stats.getIntellect() > stats.getStrength()
+				& stats.getIntellect() > stats.getCharisma()){
+			return "wizard";
+		}
+		//highest stat is stam then warrior
+		else if (stats.getStamina() > stats.getIntellect() & stats.getStamina() > stats.getCharisma()
+				& stats.getStamina() > stats.getStrength()){
+			return "warrior";
+		}
+		else{
+			System.exit(1);
+			return "something went wrong character doesnt match";
+		}
+	}
+}

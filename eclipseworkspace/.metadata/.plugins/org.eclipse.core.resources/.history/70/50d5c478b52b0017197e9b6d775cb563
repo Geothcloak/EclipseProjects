@@ -1,0 +1,30 @@
+package com.justin.fileio;
+
+public abstract class PlayerCharacter {
+	private String name;
+	private Stats stats;
+	public PlayerCharacter(String name, Stats stats){
+		this.name = name;
+		this.stats = stats;
+	}
+	public final String getName(){
+		return name;
+	}
+	public final Stats getStats(){
+		return stats;
+	}
+	
+	public abstract String getClassType();
+	public abstract String getFeat();
+	public abstract String setClassType(String classType);
+	public abstract String setStats(Stats stats);
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setStats(Stats stats) {
+		this.stats = stats;
+	}
+	
+	
+}

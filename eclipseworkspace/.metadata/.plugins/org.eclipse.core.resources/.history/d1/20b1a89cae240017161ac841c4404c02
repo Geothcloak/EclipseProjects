@@ -1,8 +1,0 @@
-package com.justin.shippingSystem;
-
-public class CalcWeightPerFoot {
-	public double calcWeightPerFoot(Dimentions dimentions, double weight){
-		CalcVolume calcVolume = new CalcVolume();
-		return (calcVolume.calcVolume(dimentions)/weight);
-	}
-}

@@ -1,0 +1,49 @@
+package com.justin.fileio;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ReadFromFile {
+	List<PlayerCharacter> playerCharacters;
+	String[] tempArray;
+	
+	public ReadFromFile(){
+		
+		playerCharacters = new ArrayList<>();
+		SetClassType setClassType = new SetClassType();
+		
+		try{
+			BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\geoth\\eclipseworkspace\\FileIO\\PlayerCharactersSaved.txt"));
+			String currentLine;
+			while ((currentLine = reader.readLine())!= null) {
+				tempArray = currentLine.split(",");
+				
+				Stats stats = new Stats(Integer.parseInt(tempArray[1]), Integer.parseInt(tempArray[2]), 
+						Integer.parseInt(tempArray[3]), Integer.parseInt(tempArray[4]));
+				
+				setClassType.calcClass(stats);
+				//PlayerCharacter playerCharacter;
+				
+				//tempArray[0], stats
+				
+				
+	        }
+		
+			
+			reader.close();
+		}catch(IOException e){
+			System.out.println("could not find file." + e.getMessage());
+		}
+		
+		int i = 0;
+		while(tempArray[i] != null){
+			System.out.println(tempArray[i].toString());
+			i++;
+		}
+		
+	}
+}
+

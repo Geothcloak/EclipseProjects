@@ -1,0 +1,23 @@
+package com.justin.fileio;
+
+public class Warrior extends PlayerCharacter{
+	private String classType;
+	private String feat;
+	
+	public Warrior(String name, Stats stats, String classType, String feat) {
+		super(name, stats);
+		this.classType = classType;
+		this.feat = feat;
+	}
+	@Override
+	public String getClassType() {
+		return classType;
+	}
+
+	@Override
+	public String getFeat() {
+		return feat;
+	}
+	
+
+}

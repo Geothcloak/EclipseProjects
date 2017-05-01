@@ -1,0 +1,10 @@
+Class: Cleric, Name: gary, Stats: Int=1Chr=1Str=1Sta=1
+Class: Wizard, Name: Usidore, Stats: Int=9Chr=1Str=1Sta=1
+Class: Warrior, Name: Chunt, Stats: Int=5Chr=2Str=5Sta=2
+Class: Cleric, Name: Jusin, Stats: Int=4Chr=4Str=4Sta=4
+Class: Warrior, Name: Arthas, Stats: Int=1Chr=2Str=3Sta=4
+Class: Wizard, Name: Godwarrior, Stats: Int=5Chr=4Str=3Sta=2
+Class: Cleric, Name: Herald of the fire, Stats: Int=7Chr=7Str=7Sta=7
+Class: Rogue, Name: Doom guy, Stats: Int=6Chr=6Str=6Sta=6
+Class: Warrior, Name: Tom, Stats: Int=1Chr=2Str=3Sta=4
+Class: Cleric, Name: Blind tom, Stats: Int=3Chr=3Str=3Sta=3

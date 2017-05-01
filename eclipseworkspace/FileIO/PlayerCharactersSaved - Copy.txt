@@ -1,0 +1,10 @@
+gary,1,1,1,1
+Usidore,9,1,1,1
+Chunt,5,2,5,2
+Jusin,4,4,4,4
+Arthas,1,2,3,4
+Godwarrior,5,4,3,2
+Herald of the fire,7,7,7,7
+Doom guy,6,6,6,6
+Tom,1,2,3,4
+Blind tom,3,3,3,3

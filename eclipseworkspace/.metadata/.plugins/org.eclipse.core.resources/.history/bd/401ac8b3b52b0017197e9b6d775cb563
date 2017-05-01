@@ -1,0 +1,33 @@
+package com.justin.fileio;
+
+public class Wizard extends PlayerCharacter{
+	private String classType;
+	private String feat;
+	
+	public Wizard(String name, Stats stats, String classType, String feat) {
+		super(name, stats);
+		this.classType = classType;
+		this.feat = feat;
+	}
+
+	@Override
+	public String getClassType() {
+		return classType;
+	}
+
+	@Override
+	public String getFeat() {
+		return feat;
+	}
+
+	@Override
+	public String setClassType(String classType) {
+		this.classType = classType;
+		return null;
+	}
+
+	
+	
+	
+
+}

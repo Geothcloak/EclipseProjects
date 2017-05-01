@@ -1,0 +1,28 @@
+package com.justin.fileio;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ReadFromFile {
+	List<PlayerCharacter> playerCharacters;
+	
+	public ReadFromFile(){
+		playerCharacters = new ArrayList<>();
+	}
+	   try {
+           BufferedReader in = new BufferedReader(new FileReader("G:\\RoutePPAdvant2.txt"));
+           String str;
+           str = in.readLine();
+           while ((str = in.readLine()) != null) {
+               System.out.println(str);
+           }
+           in.close();
+       }catch (IOException e){
+           System.out.println("File Read Error");
+       }
+	
+}
+
