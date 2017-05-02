@@ -12,6 +12,6 @@ public class ReadMessageFromFileTest {
 	} 
 	@Test
 	public void canReadMessageFromFile(){
-		Assert.assertEquals(" ", readMessageFromFile.readMessageFromFile("Password.txt"));
+		Assert.assertEquals("hi my name is cat because im a cat", readMessageFromFile.readMessageFromFile("Password.txt"));
 	}
 }

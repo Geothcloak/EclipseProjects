@@ -1,0 +1,39 @@
+package com.justin.cipher;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class CharacterSwapIncoder implements Cipherable{
+	Map<Character, Character> charsMap;
+	Map<Character, Character> charsMapForDecipher;
+	public CharacterSwapIncoder(Map<Character, Character> charsMap){
+		this.charsMap = charsMap;
+		
+	}
+	
+	@Override
+	public String useCipher(String string) {
+		
+		char[] charsArray = string.toCharArray();
+		//char[] charsFromMessage = stringToArray.stringToArray(messageString);
+		
+		
+		StringBuilder stringBuilder = new StringBuilder();
+		for (char c : charsArray) {
+			stringBuilder.append(charsMap.get(c));
+		}
+		return stringBuilder.toString();
+	}
+
+	@Override
+	public String useDeCipher(String string) {
+		Map<Character, Character> tempCharsMap = new HashMap<>();
+		char[] charsArray = string.toCharArray();
+		for (Entry<Character, Character> c : charsMap.entrySet()) {
+			tempCharsMap.put(c.getValue(), c.getKey());
+		}
+		
+		return useCipher(tempCharsMap, string);
+	}
+}

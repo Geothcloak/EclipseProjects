@@ -13,10 +13,10 @@ public class ReadMessageFromFile {
 			String currentLine;
 			BufferedReader reader = new BufferedReader(new FileReader(filePath));
 			
-			do{
+			while(reader.ready()){
 				currentLine = reader.readLine();
 				stringBuilder.append(currentLine);
-			}while(reader.readLine()!= null);
+			}
 				
 			reader.close();
 		}catch(IOException e){

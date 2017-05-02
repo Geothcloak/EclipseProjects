@@ -1,0 +1,33 @@
+package com.justin.cipher;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class UseCipher implements Cipherable{
+	@Override
+	public String useCipher(Map<Character, Character> charsMap, char[] charsArray) {
+		StringBuilder stringBuilder = new StringBuilder();
+		for (char c : charsArray) {
+			stringBuilder.append(charsMap.get(c));
+		}
+		return stringBuilder.toString();
+	}
+
+	@Override
+	public String useDeCipher(Map<Character, Character> charsMap, char[] charsArray) {
+		Map<Character, Character> tempCharsMap = new HashMap<>();
+		
+		for (int i = 0; i < charsMap.size(); i++) {
+			
+		}
+		
+		
+		for (char c : charsArray) {
+			charsMap.get(c);
+			
+		//	charsMap.get(c)
+		}
+		return null;
+	}
+
+}

@@ -1,1 +1,7 @@
 1493655747034	Rename type 'TodaysCipherCode'
+1493684326145	Rename type 'EncodeCipher'
+1493687295938	Delete element
+1493687310996	Delete element
+1493687319890	Delete element
+1493691938563	Rename type 'UseCipher'
+1493693088220	Rename field 'charsMapForDecipher'

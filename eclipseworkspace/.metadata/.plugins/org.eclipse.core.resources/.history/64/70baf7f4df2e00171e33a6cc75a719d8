@@ -1,0 +1,13 @@
+package com.justin.cipher;
+
+public class MessageReadWriter {
+	public String readAndWriteMessage(){
+		ReadMessageFromFile readMessageFromFile = new ReadMessageFromFile();
+		Cipherable cipherable = new CharacterSwapIncoder();
+		PrintMessageToFile printMessageToFile = new PrintMessageToFile();
+		
+		
+		
+		return null;
+	}
+}

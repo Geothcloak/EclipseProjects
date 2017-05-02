@@ -1,0 +1,19 @@
+package com.justin.cipher;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class UseCipher implements Cipherable{
+	@Override
+	public String useCipher(Map<Character, Character> chars, char[] charArray) {
+		
+		return null;
+	}
+
+	@Override
+	public String useDeCipher(Map<Character, Character> charsMap, char[] charArray) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

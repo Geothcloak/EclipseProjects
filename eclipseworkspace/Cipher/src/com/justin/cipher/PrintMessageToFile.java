@@ -11,7 +11,7 @@ public class PrintMessageToFile {
 	public String printMessageToFile(String filePath, String messageToPrint){
 		
 		try{
-			Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("FromTheWriter.txt")));
+			Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filePath)));
 			writer.write(messageToPrint);
 			
 			writer.close();

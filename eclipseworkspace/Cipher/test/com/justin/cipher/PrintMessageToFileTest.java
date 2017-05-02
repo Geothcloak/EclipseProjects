@@ -6,6 +6,7 @@ import org.junit.Test;
 
 public class PrintMessageToFileTest {
 	PrintMessageToFile printMessageToFile;
+	
 	@Before
 	public void init(){
 		printMessageToFile = new PrintMessageToFile();
@@ -13,6 +14,6 @@ public class PrintMessageToFileTest {
 	}
 	@Test
 	public void canPrintMessageToFile(){
-		Assert.assertEquals(" ", printMessageToFile.printMessageToFile("MessageAfterFormat.txt", "hi"));
+		Assert.assertEquals("hi", printMessageToFile.printMessageToFile("MessageAfterFormat.txt", "hi"));
 	}
 }

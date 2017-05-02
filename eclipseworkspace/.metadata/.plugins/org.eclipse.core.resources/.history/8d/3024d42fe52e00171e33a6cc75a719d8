@@ -1,0 +1,27 @@
+package com.justin.cipher;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ReadMessageFromFile {
+	
+	public String readMessageFromFile(String filePath){
+		StringBuilder stringBuilder = new StringBuilder();
+		
+		try{
+			String currentLine = null;
+			BufferedReader reader = new BufferedReader(new FileReader(filePath));
+			
+			do{
+				stringBuilder.append(currentLine);
+			}while((currentLine = reader.readLine())!= null);
+				
+			reader.close();
+		}catch(IOException e){
+			System.out.println("Could not find file." + e.getMessage());
+		}
+		
+		return stringBuilder.toString();
+	}
+}
