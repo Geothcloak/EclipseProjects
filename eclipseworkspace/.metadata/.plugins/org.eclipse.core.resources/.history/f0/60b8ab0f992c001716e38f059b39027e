@@ -1,8 +1,0 @@
-package com.justin.fileio;
-
-public class StatsReporter {
-	public String statsReporter(){
-		
-		return null;
-	}
-}
