@@ -1,0 +1,16 @@
+package com.justin.dcompany;
+
+import java.util.Random;
+
+public class RewardSystem {
+	private double maxReward = 1.5;
+	private double minReward = .5;
+	private double randomReward = 0;
+	public double PayCheckReward(double payCheck){
+		double finalizedPaycheck = 0;
+		Random rand = new Random();
+		randomReward = rand.nextDouble() * maxReward + minReward;
+		finalizedPaycheck = (payCheck + (payCheck * randomReward));
+		return finalizedPaycheck;
+	}
+}

@@ -1,5 +1,0 @@
-package com.justin.dcompany;
-
-public abstract class  Employee {
-
-}

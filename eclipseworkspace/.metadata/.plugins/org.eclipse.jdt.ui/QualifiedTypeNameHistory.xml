@@ -33,4 +33,5 @@
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="com.justin.dcompany.Salaried"/>
 </qualifiedTypeNameHistroy>

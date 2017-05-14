@@ -1,0 +1,19 @@
+package com.justin.dcompany;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+public class SalariedTest {
+	Salaried salaried;
+	@Before
+	public void init(){
+	salaried = new Salaried("joe", 1, "grocery", 15000);
+	
+	}
+	@Test
+	public void canCalcPayCheck(){
+		//Assert.assertEquals(1, salaried.CalculatePayCheck());
+		Assert.assertEquals(1, salaried.CalculatePayCheck(), .001);
+	}
+}

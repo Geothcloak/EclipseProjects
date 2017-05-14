@@ -1,0 +1,17 @@
+package com.justin.dcompany;
+
+import java.util.Random;
+
+public class RewardSystem {
+	private double maxReward = 1.5;
+	private double minReward = .5;
+	private double randomReward = 0;
+	public double PayCheckReward(double payCheck){
+		Random rand = new Random();
+		randomReward = rand.nextDouble() * maxReward + minReward;
+		System.out.println("randomReward is " + randomReward + " rand.nextdouble is " + rand.nextDouble());
+		//return (payCheck + (payCheck * randomReward));
+		System.out.println(" pay check * randome reward = " + payCheck * randomReward);
+		return payCheck * randomReward;
+	}
+}

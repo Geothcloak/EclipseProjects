@@ -1,0 +1,22 @@
+package com.justin.dcompany;
+
+public class Hourly extends Employee{
+	private double hoursWorked;
+	private double hourlyWage;
+	public Hourly(String name, int id, String department, float hoursWorked, double hourlyWage) {
+		super(name, id, department);
+		this.hoursWorked = hoursWorked;
+		this.hourlyWage = hourlyWage;
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double CalculatePayCheck() {
+		PayCheckReward payCheckReward = new PayCheckReward();
+		double payCheck;
+		payCheck = hoursWorked * hourlyWage;
+		PaycheckReward();
+		return 0;
+	}
+
+}

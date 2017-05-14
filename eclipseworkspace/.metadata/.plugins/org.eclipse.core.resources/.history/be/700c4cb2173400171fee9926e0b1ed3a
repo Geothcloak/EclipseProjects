@@ -1,0 +1,11 @@
+package com.justin.dcompany;
+
+public class RewardSystem {
+	private double maxReward = 2;
+	private double minReward = .5;
+	public double PaycheckReward(double payCheck){
+		Random rand = new Random();
+		payCheck * 
+		return 0;
+	}
+}

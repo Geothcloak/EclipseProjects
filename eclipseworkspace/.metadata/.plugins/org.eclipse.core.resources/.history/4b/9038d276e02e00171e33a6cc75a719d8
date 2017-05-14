@@ -1,8 +1,0 @@
-package com.justin.cipher;
-
-import java.util.Map;
-
-public interface Cipherable {
-	public String useCipher(Map<Character, Character> charsMap, String string);
-	public String useDeCipher(Map<Character, Character> charsMap, String string);
-}

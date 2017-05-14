@@ -1,0 +1,21 @@
+package com.justin.dcompany;
+
+public class Salaried extends Employee{
+	private double yearlySalary;
+	public Salaried(String name, int id, String department, double yearlySalary) {
+		super(name, id, department);
+		this.yearlySalary = yearlySalary;
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double CalculatePayCheck() {
+		RewardSystem rewardSystem = new RewardSystem();
+		double payCheck;
+		payCheck = yearlySalary / 26;
+		rewardSystem.PayCheckReward(payCheck);
+		return payCheck;
+	}
+	
+
+}

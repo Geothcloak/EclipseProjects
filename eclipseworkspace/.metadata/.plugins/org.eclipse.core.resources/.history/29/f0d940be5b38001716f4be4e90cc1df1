@@ -1,0 +1,5 @@
+package com.justin.dcompany;
+
+public interface Rewardable {
+	public double CalculatePayCheck();
+}
