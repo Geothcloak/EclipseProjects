@@ -1,0 +1,9 @@
+package com.justin.totemBiz;
+
+public class Totem {
+	
+	
+	public Totem(){
+		
+	}
+}

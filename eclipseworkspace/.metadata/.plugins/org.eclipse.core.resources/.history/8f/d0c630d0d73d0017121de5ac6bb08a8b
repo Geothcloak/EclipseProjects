@@ -1,0 +1,22 @@
+package com.justin.totemBiz;
+
+public class LinkedNodes {
+	Object object;
+	Object pointer;
+	public LinkedNodes(Object object){
+		this.object = object;
+		this.pointer = null;
+	}
+	public LinkedNodes(Object object, Object pointer){
+		this.object = object;
+		this.pointer = pointer;
+	}
+	public void addNode(Object object){
+		LinkedNodes linkedNodes = new LinkedNodes(object, this.object);
+	}
+	public void deleteNode(int indexToDelete){
+		//not in range
+		//first, last, middle
+		
+	}
+}

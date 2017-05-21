@@ -13,7 +13,6 @@ public abstract class  Employee implements Payable{
 	}
 	
 	
-	
 	public String getName() {
 		return name;
 	}
@@ -21,7 +20,7 @@ public abstract class  Employee implements Payable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public int getId() {
 		return id;
 	}

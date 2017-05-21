@@ -1,5 +1,0 @@
-package com.justin.dcompany;
-
-public class Hourly extends Employee{
-
-}

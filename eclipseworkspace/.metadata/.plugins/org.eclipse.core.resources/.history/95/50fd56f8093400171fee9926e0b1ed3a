@@ -1,8 +1,0 @@
-package com.justin.dcompany;
-
-public class RewardSystem {
-	public double PaycheckReward(){
-		
-		return null;
-	}
-}
