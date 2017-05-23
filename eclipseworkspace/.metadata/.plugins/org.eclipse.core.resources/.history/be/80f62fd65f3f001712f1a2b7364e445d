@@ -1,0 +1,27 @@
+package com.justin.totemBiz;
+
+public class LinkedList {
+	LinkNode head;
+	
+	public LinkedList(Object data){
+		head = new LinkNode(data);
+	}
+	
+	public void add(Object data){
+		LinkNode current = head;
+		
+		while (current.next != null){
+			current = current.next;
+		}
+		
+		
+		
+		if (head.next == null){
+			head.next = new LinkNode(data);
+		}
+		
+		
+		
+		
+	}
+}

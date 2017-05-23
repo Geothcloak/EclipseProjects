@@ -1,0 +1,29 @@
+package com.justin.totemBiz;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class LinkedListTest {
+	Totem totemUnderTest1;
+	Totem totemUnderTest2;
+	Totem totemUnderTest3;
+	Totem totemUnderTest4;
+	LinkedList linkedListUnderTest;
+	@Before
+	public void init(){
+		totemUnderTest1 = new Totem(6.2f, "justin", "wood", 6);
+		totemUnderTest2 = new Totem(6.2f, "justin", "wood", 6);
+		totemUnderTest3 = new Totem(6.2f, "justin", "wood", 6);
+		totemUnderTest4 = new Totem(6.2f, "justin", "wood", 6);
+		linkedListUnderTest = new LinkedList(totemUnderTest1);
+		
+	}
+	@Test
+	public void canAddToLinkedList(){
+		linkedListUnderTest.add(totemUnderTest1);
+		linkedListUnderTest.add(totemUnderTest2);
+		linkedListUnderTest.add(totemUnderTest3);
+		linkedListUnderTest.add(totemUnderTest4);
+	}
+	
+}

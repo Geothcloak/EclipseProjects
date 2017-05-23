@@ -1,0 +1,10 @@
+package com.justin.totemBiz;
+
+public class LinkNode {
+	Object data;
+	LinkNode next;
+	
+	public LinkNode(Object data){
+		this.data= data;
+	}
+}

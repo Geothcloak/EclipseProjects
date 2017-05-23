@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.justin.totemBiz.LinkedNodes&apos; to &apos;LinkNode&apos;&#x0D;&#x0A;- Original project: &apos;TotemBiz&apos;&#x0D;&#x0A;- Original element: &apos;com.justin.totemBiz.LinkedNodes&apos;&#x0D;&#x0A;- Renamed element: &apos;com.justin.totemBiz.LinkNode&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;LinkedNodes&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.justin.totemBiz{LinkedNodes.java[LinkedNodes" matchStrategy="1" name="LinkNode" qualified="false" references="true" similarDeclarations="false" stamp="1495503859479" textual="false" version="1.0"/>
+</session>
