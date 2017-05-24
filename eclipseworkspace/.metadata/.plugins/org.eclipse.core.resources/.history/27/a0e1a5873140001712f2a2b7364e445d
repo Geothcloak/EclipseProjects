@@ -12,12 +12,11 @@ public class TotemSort {
 		float secondHeight = 0;
 		Totem first;
 		Totem second;
-		
-		int sizeOfList = list.size();
 		do{
 			didFlip = false;
 			
-			for (int i = 0; i<sizeOfList; i++){
+			for (int i = 0; i<list.size(); i++){
+				System.out.println("inside loop");
 				first = (Totem) current.getData();
 				second =  (Totem) current.getData();
 				firstHeight = first.getHeight();
