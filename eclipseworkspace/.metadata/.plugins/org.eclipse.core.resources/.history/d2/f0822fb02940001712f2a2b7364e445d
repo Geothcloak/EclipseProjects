@@ -1,0 +1,21 @@
+package com.justin.totemBiz;
+import com.justin.linkedlist.LinkNode;
+import com.justin.linkedlist.LinkedList;
+
+public class TotemSort {
+	
+	public void byHeight(LinkedList list){
+		LinkNode current = list.getHead();
+		for (int i = 0; i<list.size(); i++){
+			
+			float temp1 = ((Totem)current.getData()).getHeight();
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+}

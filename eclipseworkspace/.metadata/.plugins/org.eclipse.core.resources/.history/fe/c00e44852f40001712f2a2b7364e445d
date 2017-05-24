@@ -1,0 +1,41 @@
+package com.justin.totemBiz;
+import com.justin.linkedlist.LinkNode;
+import com.justin.linkedlist.LinkedList;
+
+public class TotemSort {
+	
+	public void byHeight(LinkedList list){
+		LinkNode current = list.getHead();
+		boolean didFlip = false;
+		float firstNodeData = 0;
+		float secondNodeData = 0;
+		
+		do{
+			didFlip = false;
+			
+			for (int i = 1; i<list.size(); i++){
+				Totem first = (Totem) current.getData();
+				
+				firstNodeData = ((Totem)current.getData()).getHeight();
+				if (current.getNext() != null){
+					secondNodeData = ((Totem)current.getNext().getData()).getHeight();
+				}
+				
+				
+				if (firstNodeData > secondNodeData){
+					current.setData(secondNodeData);
+					current.getNext().setData(firstNodeData);
+					didFlip = true;
+				}
+				current = current.getNext();
+			}
+			current = list.getHead();
+		}while(didFlip = true);
+	}
+	
+	
+	
+	
+	
+	
+}

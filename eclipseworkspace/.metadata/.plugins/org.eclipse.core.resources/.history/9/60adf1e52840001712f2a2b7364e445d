@@ -1,0 +1,10 @@
+package com.justin.totemBiz;
+import com.justin.linkedlist.LinkedList;
+
+public class TotemSort {
+	
+	public void byHeight(LinkedList list){
+		
+	}
+	
+}

@@ -1,1 +1,9 @@
 1495503859479	Rename type 'LinkedNodes'
+1495591969425	Move compilation unit
+1495591976804	Move compilation unit
+1495593777639	Rename local variable 'temp1'
+1495593787062	Rename local variable 'temp2'
+1495594206657	Rename local variable 'firstNode'
+1495594213089	Rename local variable 'secondNode'
+1495596127824	Rename local variable 'firstNodeData'
+1495596139614	Rename local variable 'secondNodeData'
