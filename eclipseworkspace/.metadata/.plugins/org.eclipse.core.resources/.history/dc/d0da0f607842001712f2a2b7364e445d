@@ -1,0 +1,64 @@
+package com.justin.totemBiz;
+import com.justin.linkedlist.LinkNode;
+import com.justin.linkedlist.LinkedList;
+
+public class TotemSort {
+	
+	public LinkedList byHeight(LinkedList list){
+		LinkNode current = list.getHead();
+		boolean didFlip = false;
+		
+		float firstHeight = 0;
+		float secondHeight = 0;
+
+		Totem firstObject;
+		Totem secondObject;
+		
+		LinkNode firstNode;
+		LinkNode secondNode;
+		int sizeOfList = list.size() - 2;
+		
+		do{
+			didFlip = false;
+			
+			for (int i = 0; i<sizeOfList; i++){
+				firstObject = (Totem)current.getData();
+				secondObject = (Totem)current.getNext().getData();
+				
+				firstHeight = firstObject.getHeight();
+				secondHeight = secondObject.getHeight();
+			
+				firstNode = current;
+				secondNode = current.getNext();
+				
+				if (firstHeight > secondHeight){
+					System.out.println("first height " + ((Totem)firstNode.getData()).getHeight() );
+					System.out.println("second height " + ((Totem)secondNode.getData()).getHeight() );
+					firstNode.setNext(secondNode.getNext());
+					secondNode.setNext(firstNode);
+					
+					if (i == 0){
+						list.setHead(secondNode);
+						System.out.println("setting head to " + ((Totem)list.getHead().getData()).getHeight() );
+					}
+					
+				
+					didFlip = true;
+					
+					current = secondNode.getNext();
+				}else{
+					current = current.getNext();
+				}
+				
+				System.out.println("inside for loop");
+			}
+			System.out.println("end of while iteration");
+			current = list.getHead();
+			System.out.println("resetting current to head  " + ((Totem)list.getHead().getData()).getHeight() );
+		}while(didFlip == true);
+		
+		return list;
+	}
+	
+	
+}

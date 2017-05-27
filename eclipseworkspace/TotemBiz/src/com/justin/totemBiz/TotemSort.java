@@ -4,42 +4,71 @@ import com.justin.linkedlist.LinkedList;
 
 public class TotemSort {
 	
-	public void byHeight(LinkedList list){
+	public LinkedList byHeight(LinkedList list){
 		LinkNode current = list.getHead();
-		boolean didFlip = false;
+		LinkNode previous = null;
+		boolean didFlip = true;
 		
 		float firstHeight = 0;
 		float secondHeight = 0;
-		Totem first;
-		Totem second;
+
+		Totem firstObject;
+		Totem secondObject;
 		
-		int sizeOfList = list.size();
-		do{
+		LinkNode firstNode;
+		LinkNode secondNode;
+		int sizeOfList = list.size() - 2;
+		
+		while(didFlip){
 			didFlip = false;
 			
 			for (int i = 0; i<sizeOfList; i++){
-				first = (Totem) current.getData();
-				second =  (Totem) current.getData();
-				firstHeight = first.getHeight();
-				if (current.getNext() != null){
-					secondHeight = ((Totem)current.getNext().getData()).getHeight();
-				}
+				firstObject = (Totem)current.getData();
+				secondObject = (Totem)current.getNext().getData();
 				
+				firstHeight = firstObject.getHeight();
+				secondHeight = secondObject.getHeight();
+				
+				
+				firstNode = current;
+				secondNode = current.getNext();
+				
+				System.out.println("first height = " + ((Totem)firstNode.getData()).getHeight() 
+						+ "second height " + ((Totem)secondNode.getData()).getHeight());
 				
 				if (firstHeight > secondHeight){
-					current.setData(secondHeight);
-					current.getNext().setData(firstHeight);
+					System.out.println("flipping");
+					
+					
+					if (i == 0){
+						list.setHead(secondNode);
+						System.out.println("setting head to " + ((Totem)list.getHead().getData()).getHeight() );
+						firstNode.setNext(secondNode.getNext());
+						secondNode.setNext(firstNode);
+					}else{
+						firstNode.setNext(secondNode.getNext());
+						secondNode.setNext(firstNode);	
+						previous.setNext(secondNode);
+					}
+					
+				
 					didFlip = true;
+					previous = current;
+					current = secondNode.getNext();
+				}else{
+					previous = current;
+					current = current.getNext();
 				}
-				current = current.getNext();
+				
+				System.out.println("end of for loop iteration");
 			}
+			System.out.println("end of while iteration");
 			current = list.getHead();
-		}while(didFlip = true);
+			System.out.println("resetting current to head  " + ((Totem)list.getHead().getData()).getHeight() );
+		}
+		
+		return list;
 	}
-	
-	
-	
-	
 	
 	
 }

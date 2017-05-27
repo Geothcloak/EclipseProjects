@@ -1,0 +1,19 @@
+package com.justin.totemBiz;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TotemReporterTest {
+	TotemReporter totemReporterUnderTest;
+	
+	@Before
+	public void init(){
+		totemReporterUnderTest = new TotemReporter();
+	}
+	
+	@Test
+	public void canPrintToConsole(){
+		
+	}
+	
+}
