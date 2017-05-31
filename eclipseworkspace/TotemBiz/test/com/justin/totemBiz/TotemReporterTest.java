@@ -32,7 +32,12 @@ public class TotemReporterTest {
 	
 	@Test
 	public void canPrintToConsole(){
-		Assert.assertEquals( " ", totemReporterUnderTest.printToConsole(linkedListUnderTest));
+		Assert.assertEquals( "height: 3.0 name: justin material: wood number of spirits: 4\n" +
+				"height: 2.0 name: justin material: wood number of spirits: 2\n" +
+				"height: 1.0 name: justin material: wood number of spirits: 3\n" +
+				"height: 4.0 name: justin material: wood number of spirits: 1\n", 
+				
+				totemReporterUnderTest.printToConsole(linkedListUnderTest));
 	}
 	
 }

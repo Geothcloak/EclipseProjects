@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;secondNode&apos; in &apos;com.justin.totemBiz.TotemSort.byHeight(...)&apos; to &apos;next&apos;&#x0D;&#x0A;- Original project: &apos;TotemBiz&apos;&#x0D;&#x0A;- Original element: &apos;com.justin.totemBiz.TotemSort.byHeight(LinkedList).secondNode&apos;&#x0D;&#x0A;- Renamed element: &apos;secondNode&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;secondNode&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.justin.totemBiz{TotemSort.java[TotemSort~byHeight~QLinkedList;@secondNode!417!436!426!435!QLinkNode;!0!false" name="next" references="true" stamp="1496192981085" version="1.0"/>
+</session>

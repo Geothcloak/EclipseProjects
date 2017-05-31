@@ -10,8 +10,9 @@ public class TotemReporter {
 		StringBuilder stringBuilder = new StringBuilder();
 		while(current != null){
 			Totem currentTotem = (Totem)current.getData();
-			stringBuilder.append("name: " + currentTotem.getName());
-			stringBuilder.append("material: " + currentTotem.getMaterial());
+			stringBuilder.append("height: " + currentTotem.getHeight() + " ");
+			stringBuilder.append("name: " + currentTotem.getName() + " ");
+			stringBuilder.append("material: " + currentTotem.getMaterial() + " ");
 			stringBuilder.append("number of spirits: " + currentTotem.getTotalSpirits() + "\n");
 			
 			current = current.getNext();

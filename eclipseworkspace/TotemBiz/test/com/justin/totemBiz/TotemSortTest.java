@@ -24,7 +24,6 @@ public class TotemSortTest {
 		totemUnderTest3 = new Totem(1f, "justin", "wood", 3);
 		totemUnderTest4 = new Totem(4f, "justin", "wood", 1);
 		linkedListUnderTest = new LinkedList(totemUnderTest1);
-		
 		linkedListUnderTest.add(totemUnderTest2);
 		linkedListUnderTest.add(totemUnderTest3);
 		linkedListUnderTest.add(totemUnderTest4);
@@ -37,6 +36,45 @@ public class TotemSortTest {
 		Assert.assertEquals(totemUnderTest3, list.getHead().getData());
 		Assert.assertEquals(totemUnderTest2, list.getHead().getNext().getData());
 		Assert.assertEquals(totemUnderTest1, list.getHead().getNext().getNext().getData());
-		//Assert.assertEquals(totemUnderTest4, list.getHead().getNext().getNext().getNext().getData());
+		Assert.assertEquals(totemUnderTest4, list.getHead().getNext().getNext().getNext().getData());
+	}
+	@Test
+	public void canByHeightMoveLastNode(){
+		totemUnderTest1 = new Totem(3f, "justin", "wood", 4);
+		totemUnderTest2 = new Totem(2f, "justin", "wood", 2);
+		totemUnderTest3 = new Totem(4f, "justin", "wood", 3);
+		totemUnderTest4 = new Totem(1f, "justin", "wood", 1);
+		linkedListUnderTest = new LinkedList(totemUnderTest1);
+		linkedListUnderTest.add(totemUnderTest2);
+		linkedListUnderTest.add(totemUnderTest3);
+		linkedListUnderTest.add(totemUnderTest4);
+		
+		LinkedList list = totemSortUnderTest.byHeight(linkedListUnderTest);
+		totemReporterUnderTest.printToConsole(list);
+		
+		Assert.assertEquals(totemUnderTest4, list.getHead().getData());
+		Assert.assertEquals(totemUnderTest2, list.getHead().getNext().getData());
+		Assert.assertEquals(totemUnderTest1, list.getHead().getNext().getNext().getData());
+		Assert.assertEquals(totemUnderTest3, list.getHead().getNext().getNext().getNext().getData());
+		
+	}
+	@Test
+	public void canByHeightIfAlreadySorted(){
+		totemUnderTest1 = new Totem(1f, "justin", "wood", 4);
+		totemUnderTest2 = new Totem(2f, "justin", "wood", 2);
+		totemUnderTest3 = new Totem(3f, "justin", "wood", 3);
+		totemUnderTest4 = new Totem(4f, "justin", "wood", 1);
+		linkedListUnderTest = new LinkedList(totemUnderTest1);
+		linkedListUnderTest.add(totemUnderTest2);
+		linkedListUnderTest.add(totemUnderTest3);
+		linkedListUnderTest.add(totemUnderTest4);
+		
+		LinkedList list = totemSortUnderTest.byHeight(linkedListUnderTest);
+		totemReporterUnderTest.printToConsole(list);
+		
+		Assert.assertEquals(totemUnderTest1, list.getHead().getData());
+		Assert.assertEquals(totemUnderTest2, list.getHead().getNext().getData());
+		Assert.assertEquals(totemUnderTest3, list.getHead().getNext().getNext().getData());
+		Assert.assertEquals(totemUnderTest4, list.getHead().getNext().getNext().getNext().getData());
 	}
 }

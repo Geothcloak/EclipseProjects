@@ -5,6 +5,7 @@
 	<item value="=MapIntroduction/test" key="org.moreunit.wizards.NewTestCaseWizard.packageFragmentRoot.MapIntroduction"/>
 	<item value="false" key="NewTestCaseCreationWizardPage.USE_SETUP"/>
 	<item value="=ShippingSystem/test" key="org.moreunit.wizards.NewTestCaseWizard.packageFragmentRoot.ShippingSystem"/>
+	<item value="=TotemBiz/test" key="org.moreunit.wizards.NewTestCaseWizard.packageFragmentRoot.TotemBiz"/>
 	<item value="false" key="NewTestCaseCreationWizardPage.USE_TEARDOWN"/>
 	<item value="=Cipher/test" key="org.moreunit.wizards.NewTestCaseWizard.packageFragmentRoot.Cipher"/>
 	<item value="=RpgWriter/test" key="org.moreunit.wizards.NewTestCaseWizard.packageFragmentRoot.RpgWriter"/>

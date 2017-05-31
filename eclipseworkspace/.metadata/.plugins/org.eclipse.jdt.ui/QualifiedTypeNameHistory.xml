@@ -30,8 +30,10 @@
 <fullyQualifiedTypeName name="com.justin.cipher.ReadMessageFromFile"/>
 <fullyQualifiedTypeName name="com.justin.cipher.CharacterSwapIncoder"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.justin.dcompany.Salaried"/>
+<fullyQualifiedTypeName name="com.justin.linkedlist.LinkedList"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="com.justin.totemBiz.TotemReporterTest"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
-<fullyQualifiedTypeName name="com.justin.dcompany.Salaried"/>
 </qualifiedTypeNameHistroy>

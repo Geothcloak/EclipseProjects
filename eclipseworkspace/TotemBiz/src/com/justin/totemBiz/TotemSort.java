@@ -15,9 +15,8 @@ public class TotemSort {
 		Totem firstObject;
 		Totem secondObject;
 		
-		LinkNode firstNode;
-		LinkNode secondNode;
-		int sizeOfList = list.size() - 2;
+		LinkNode next;
+		int sizeOfList = list.size() -1;
 		
 		while(didFlip){
 			didFlip = false;
@@ -26,35 +25,34 @@ public class TotemSort {
 				firstObject = (Totem)current.getData();
 				secondObject = (Totem)current.getNext().getData();
 				
+				
 				firstHeight = firstObject.getHeight();
 				secondHeight = secondObject.getHeight();
 				
+				next = current.getNext();
 				
-				firstNode = current;
-				secondNode = current.getNext();
-				
-				System.out.println("first height = " + ((Totem)firstNode.getData()).getHeight() 
-						+ "second height " + ((Totem)secondNode.getData()).getHeight());
+				System.out.println("first height = " + ((Totem)current.getData()).getHeight() 
+						+ "second height " + ((Totem)next.getData()).getHeight());
 				
 				if (firstHeight > secondHeight){
 					System.out.println("flipping");
 					
 					
 					if (i == 0){
-						list.setHead(secondNode);
+						list.setHead(next);
 						System.out.println("setting head to " + ((Totem)list.getHead().getData()).getHeight() );
-						firstNode.setNext(secondNode.getNext());
-						secondNode.setNext(firstNode);
+						current.setNext(next.getNext());
+						next.setNext(current);
 					}else{
-						firstNode.setNext(secondNode.getNext());
-						secondNode.setNext(firstNode);	
-						previous.setNext(secondNode);
+						current.setNext(next.getNext());
+						next.setNext(current);	
+						previous.setNext(next);
 					}
 					
 				
 					didFlip = true;
-					previous = current;
-					current = secondNode.getNext();
+					previous = next;
+					current = next.getNext();
 				}else{
 					previous = current;
 					current = current.getNext();
