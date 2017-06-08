@@ -1,0 +1,23 @@
+package com.justin.totemBiz;
+
+import com.justin.linkedlist.LinkedList;
+
+public class GetTotemFromList {
+	
+	//takes in a linked list and a name
+	//searches through list looks for the name
+	//if finds a totem with that name returns the totem
+	
+	public Totem byName(LinkedList linkedList, String name){
+		
+		//loop through the array starting at the head
+		//use name to compare to the current nodes head before moving to the next
+		//return the totem if i found one, otherwise return its default of null
+			//deal with no name
+			//deal with duplicate names
+			//deal with just one name
+		
+		
+		return null;
+	}
+}
