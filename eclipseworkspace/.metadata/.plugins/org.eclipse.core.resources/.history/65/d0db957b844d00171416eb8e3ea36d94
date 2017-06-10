@@ -1,0 +1,85 @@
+package com.justin.totemBiz;
+import com.justin.linkedlist.LinkNode;
+import com.justin.linkedlist.LinkedList;
+
+public class TotemSort {
+	
+	public LinkedList byHeights(LinkedList list){
+		
+		return null;
+	}
+	
+	public LinkedList bySprits(LinkedList list){
+		
+		return null;
+	}
+	
+	private LinkedList sortLinkedList(LinkedList list){
+		LinkNode current = list.getHead();
+		LinkNode previous = null;
+		
+		float firstHeight = 0;
+		float secondHeight = 0;
+
+		Totem firstObject;
+		Totem secondObject;
+		
+		LinkNode next;
+		int sizeOfList = list.size() -1;
+		
+		for(int i = 0; i < sizeOfList; i++){
+			
+			for (int ii = 0; ii<sizeOfList; ii++){
+				firstObject = (Totem)current.getData();
+				secondObject = (Totem)current.getNext().getData();
+				
+				
+				firstHeight = firstObject.getHeight();
+				secondHeight = secondObject.getHeight();
+				
+				next = current.getNext();
+				
+				System.out.println("first height = " + ((Totem)current.getData()).getHeight() 
+						+ "second height " + ((Totem)next.getData()).getHeight());
+				
+				if (firstHeight > secondHeight){
+					System.out.println("flipping");
+					
+					
+					if (ii == 0){
+						list.setHead(next);
+						System.out.println("setting head to " + ((Totem)list.getHead().getData()).getHeight() );
+						current.setNext(next.getNext());
+						next.setNext(current);
+					}else{
+						current.setNext(next.getNext());
+						next.setNext(current);	
+						previous.setNext(next);
+					}
+					
+				
+					previous = next;
+					current = next.getNext();
+				}else{
+					previous = current;
+					current = current.getNext();
+				}
+				
+				System.out.println("end of for loop iteration");
+			}
+			System.out.println("end of while iteration");
+			current = list.getHead();
+			System.out.println("resetting current to head  " + ((Totem)list.getHead().getData()).getHeight() );
+		}
+		
+		return list;
+	}
+	
+	private void flipNodes(){
+		
+	}
+	
+
+	
+	
+}
