@@ -7890,7 +7890,11 @@ org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-05 22:20:54.035
 !MESSAGE No .vrapperrc or _vrapperrc found.
+<<<<<<< HEAD
 !SESSION 2017-06-06 10:36:23.320 -----------------------------------------------
+=======
+!SESSION 2017-06-07 19:28:47.295 -----------------------------------------------
+>>>>>>> 823327ad242ff339108b237fbd7cca1eac4276e2
 eclipse.buildId=4.6.3.M20170301-0400
 java.version=1.8.0_73
 java.vendor=Oracle Corporation
@@ -7898,13 +7902,18 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2017-06-06 10:36:50.092
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-07 19:28:59.204
+>>>>>>> 823327ad242ff339108b237fbd7cca1eac4276e2
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\geoth'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-06 10:37:07.251
 !MESSAGE No .vrapperrc or _vrapperrc found.
 
@@ -7940,6 +7949,56 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-08 21:04:04.242
 !MESSAGE No .vrapperrc or _vrapperrc found.
 !SESSION 2017-06-21 18:33:00.930 -----------------------------------------------
+=======
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:29:04.816
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:29:04.849
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:40.801
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:41.077
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:41.259
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:41.469
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:41.616
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:41.808
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:49.787
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:49.978
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:50.120
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:50.264
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:50.439
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:36:50.568
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:37:22.582
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-07 19:37:27.127
+!MESSAGE No .vrapperrc or _vrapperrc found.
+!SESSION 2017-06-08 10:01:01.143 -----------------------------------------------
+>>>>>>> 823327ad242ff339108b237fbd7cca1eac4276e2
 eclipse.buildId=4.6.3.M20170301-0400
 java.version=1.8.0_73
 java.vendor=Oracle Corporation
@@ -7947,16 +8006,29 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2017-06-21 18:33:31.286
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-08 10:01:35.283
+>>>>>>> 823327ad242ff339108b237fbd7cca1eac4276e2
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\geoth'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-21 18:33:43.197
 !MESSAGE No .vrapperrc or _vrapperrc found.
 !SESSION 2017-06-21 19:15:42.439 -----------------------------------------------
+=======
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-08 10:01:47.307
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-08 10:02:43.619
+!MESSAGE No .vrapperrc or _vrapperrc found.
+!SESSION 2017-06-09 18:04:33.566 -----------------------------------------------
+>>>>>>> 823327ad242ff339108b237fbd7cca1eac4276e2
 eclipse.buildId=4.6.3.M20170301-0400
 java.version=1.8.0_73
 java.vendor=Oracle Corporation
@@ -7964,13 +8036,18 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2017-06-21 19:16:02.597
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-09 18:04:50.663
+>>>>>>> 823327ad242ff339108b237fbd7cca1eac4276e2
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\geoth'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-21 19:16:09.102
 !MESSAGE No .vrapperrc or _vrapperrc found.
 
@@ -8420,4 +8497,28 @@ org.eclipse.swt.SWTException: Widget is disposed
 !MESSAGE No .vrapperrc or _vrapperrc found.
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-21 20:35:28.998
+=======
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-09 18:04:57.400
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-09 18:04:57.444
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-09 21:19:04.293
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-09 21:46:04.855
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-09 21:48:29.375
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.moreunit 1 0 2017-06-09 22:05:20.463
+!MESSAGE RenameClassParticipant.checkConditions
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-09 22:05:21.057
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2017-06-09 22:05:21.352
+>>>>>>> 823327ad242ff339108b237fbd7cca1eac4276e2
 !MESSAGE No .vrapperrc or _vrapperrc found.
