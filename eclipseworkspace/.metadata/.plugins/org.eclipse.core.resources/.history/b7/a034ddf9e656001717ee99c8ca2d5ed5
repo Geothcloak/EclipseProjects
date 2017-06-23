@@ -1,0 +1,13 @@
+import org.junit.Before;
+import org.junit.Test;
+
+public class FlaskModsTest {
+	@Before
+	public void init(){
+		
+	}
+	@Test
+	public void canChanceAllMods(){
+		
+	}
+}

@@ -1,0 +1,6 @@
+
+public class CurrencyMarket {
+	int augmentOrb;
+	int alterationOrb;
+	
+}

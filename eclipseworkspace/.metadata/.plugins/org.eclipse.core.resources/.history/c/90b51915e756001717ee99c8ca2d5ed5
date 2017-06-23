@@ -1,0 +1,68 @@
+
+public class FlaskMods {
+	
+	//prefixes i want
+	//ilvl 8 surgeon's (chrage when you get crit)
+	//ilvl 3 perpetual (increased charge recovery)
+	//7 in total prefixes
+	
+	// ilvl 20 experimenters increased duration
+	// ilvl 14 chemist's reduced charges used
+	// ilvl 20 alchemist's reduced duration increased effect
+	// ilvl 2 ample max charges
+	// ilvl 12 avenger's recharges 3 charges when you take a crit
+	
+
+	
+	
+	//suffixes i want
+	//ilvl 5 of adrenaline (increased movement speed)
+
+	// 14 in total prefixes
+	
+	// ilvl 1 res
+	// ilvl 1 
+	// ilvl 4
+	// ilvl 6
+	// ilvl 6 iron skin
+	// ilvl 8
+	// ilvl 8
+	// ilvl 9
+	// ilvl 10
+	// ilvl 10
+	// ilvl 12
+	// ilvl 16
+	// ilvl 18
+	
+	public void ChanceAllMods(){
+		int prefixTotal = 7;
+		int prefixIWant = 2;
+		
+		int suffixTotal = 14;
+		int suffixIWant = 1;
+	
+		
+		float suffixChance, prefixChance, bothChance;
+		
+		prefixChance = prefixIWant / prefixTotal;
+		suffixChance = suffixIWant  / suffixTotal;
+		
+		System.out.println("prefix chance is " + prefixChance);
+		System.out.println("suffix chance is " + suffixChance);
+		
+		
+		
+	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

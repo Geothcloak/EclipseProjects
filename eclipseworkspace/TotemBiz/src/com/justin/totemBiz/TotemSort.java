@@ -3,7 +3,7 @@ import com.justin.linkedlist.LinkNode;
 import com.justin.linkedlist.LinkedList;
 
 public class TotemSort {
-	
+	/*
 	public LinkedList byHeight(LinkedList list){
 		LinkNode current = list.getHead();
 		LinkNode previous = null;
@@ -67,6 +67,7 @@ public class TotemSort {
 		
 		return list;
 	}
+	*/
 	
 	
 }

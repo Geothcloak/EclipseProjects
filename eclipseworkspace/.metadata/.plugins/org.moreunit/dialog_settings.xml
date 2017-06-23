@@ -4,6 +4,7 @@
 	<item value="false" key="NewTestCaseCreationWizardPage.USE_TEARDOWNCLASS"/>
 	<item value="=MapIntroduction/test" key="org.moreunit.wizards.NewTestCaseWizard.packageFragmentRoot.MapIntroduction"/>
 	<item value="false" key="NewTestCaseCreationWizardPage.USE_SETUP"/>
+	<item value="=PoECraft/test" key="org.moreunit.wizards.NewTestCaseWizard.packageFragmentRoot.PoECraft"/>
 	<item value="=ShippingSystem/test" key="org.moreunit.wizards.NewTestCaseWizard.packageFragmentRoot.ShippingSystem"/>
 	<item value="=TotemBiz/test" key="org.moreunit.wizards.NewTestCaseWizard.packageFragmentRoot.TotemBiz"/>
 	<item value="false" key="NewTestCaseCreationWizardPage.USE_TEARDOWN"/>
